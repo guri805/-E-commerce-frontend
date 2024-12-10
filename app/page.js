@@ -1,12 +1,15 @@
-import React from 'react'
-import Link from 'next/link'
+"use client"
+import { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 
-const page = () => {
+const Ecommerce = () => {
+  const [login, setLogin] = useState(true);
+
   return (
     <div>
-      <h1> <Link href={'/ecommerce'} className="nav-link">Ecommerce</Link> </h1>
+      <h1>This Is Home</h1>
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default Ecommerce;
